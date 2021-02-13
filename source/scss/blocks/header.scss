@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  height: 140px;
+  margin: 0;
+  background-color: $white;
+  align-items: center;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+
+    li {
+      margin-right: 24px;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+
+      a {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+
+    .contacts__tel-number {
+      color: $black;
+      font-weight: 700;
+    }
+
+    .contacts__tel-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 40px;
+      margin-left: 40px;
+      background: $white;
+      border: 2px solid $black;
+      border-radius: 10px;
+    }
+  }
+}
