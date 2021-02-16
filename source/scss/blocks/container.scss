@@ -1,15 +1,19 @@
 .container {
-  margin: 0 auto;
   width: $sm;
-  padding: 0 20px;
+  margin: 0 auto;
 
   @media screen and (min-width: $md) {
     width: $md;
-    padding: 0 40px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: $xl) {
     width: $xl;
-    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $max) {
+    width: 90%;
+    margin: 0 auto;
   }
 }

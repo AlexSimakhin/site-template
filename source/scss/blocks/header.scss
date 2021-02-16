@@ -1,8 +1,7 @@
 .header {
+  position: fixed;
   display: flex;
   height: 140px;
-  margin: 0;
-  background-color: $white;
   align-items: center;
 
   .nav {
@@ -13,10 +12,9 @@
 
   .nav-list {
     display: flex;
+    flex: 50%;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 300px;
 
     li {
       margin-right: 24px;
@@ -34,7 +32,9 @@
 
   .contacts {
     display: flex;
+    flex: 50%;
     align-items: center;
+    justify-content: flex-end;
 
     .contacts__tel-number {
       color: $black;
